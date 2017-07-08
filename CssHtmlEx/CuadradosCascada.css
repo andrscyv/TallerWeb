@@ -1,0 +1,25 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+div{
+	height: 200px;
+	border: 1px solid black;
+
+	
+}
+#d1{
+	width: 20%;
+	position: absolute;
+	background-color: red;
+}
+
+#d1 div{
+	width: 100%;
+	position: absolute;
+	background-color:green;
+	left: 100%;
+	top: 20%;
+}

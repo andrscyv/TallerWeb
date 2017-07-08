@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GuiaHTML</title>
+</head>
+<body>
+<h1 > Guía HTML </h1>
+<h2>Indice</h2>
+<ul> 
+	<li><a href="#1">Introdución</a></li>
+	<li><a href="#2">Tags para dar formato</a></li>
+	<li><a href="#3">CSS</a></li>
+	<li><a href="#4">Tablas y listas</a></li>
+	<li><a href="#5">Iframe</a></li>
+	<li><a href="#6">Head y metadata</a></li>
+	<li><a href="#7">Layout</a></li>
+	<li><a href="#8">Forms</a></li>
+</ul>
+<!--<img src="/Users/El_jefe/Documents/imagenhtml/god.jpg" style="width:300px;height: 300px">-->
+<h2 id ="1">Introducción</h2>
+	<p>
+	HTML o <i> Hyper Text Markup Language</i> es un lenguaje para describir el contenido de páginas web. Las unidades fundamentales del lenguaje son los <i>elementos html</i> identificados por "tags" : &lt; &gt;. Éstos tienen atributos que los identifican o modifican su contenido.
+	</p>
+	<table width="70%">
+		<caption> Tags básicos</caption>
+		<tr>
+			<th>Tag</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+		  <td>&lt;html&gt;</a></td>
+		  <td>Define la raiz de un documento HTML</td>
+		</tr>
+		<tr>
+		  <td>&lt;body&gt;</a></td>
+		  <td>Define el cuerpo</td>
+		</tr>
+		<tr>
+		  <td>&lt;head&gt;</a></td>
+		  <td>Contiene información que no se muestra en la página, como estilo y metadata</td>
+		</tr>
+		<tr>
+			<td>&lt;hn&gt;</td>
+			<td>Define un encabezado n=1...6</td>
+		</tr>
+		<tr>
+		  <td>&lt;hr&gt;</a></td>
+		  <td>Establece un cambio de tema en la página</td>
+		</tr>
+
+		<tr>
+			<td>&lt;p&gt;</td>
+			<td>Define un nuevo párrafo</td>
+		</tr>
+		<tr>
+			<td>&lt;br&gt;</td>
+			<td>Da un salto de línea</td>
+		</tr>
+		<tr>
+			<td>&lt;a&gt;</td>
+			<td>Define un link</td>
+		</tr>
+		<tr>
+			<td>&lt;img&gt;</td>
+			<td>Define una imágen</td>
+		</tr>
+		<tr>
+			<td>&lt;pre&gt;</td>
+			<td>Texto preformateado</td>
+		</tr>
+		<tr>
+			<td>&lt;q&gt;</td>
+			<td>Citas</td>
+		</tr>
+		<tr>
+			<td>&lt;blockquote&gt;</td>
+			<td>Cita más extensa</td>
+		</tr>
+		<tr>
+			<td>&lt;abr&gt;</td>
+			<td>Abreviaciones</td>
+		</tr>
+		<tr>
+			<td>&lt;cite&gt;</td>
+			<td>Título de un trabajo</td>
+		</tr>
+		<tr>
+			<td>&lt;map&gt;</td>
+			<td>Define un conjunto de divisiones de una imágen</td>
+		</tr>
+		<tr>
+			<td>&lt;area&gt;</td>
+			<td>Define cada una de las divisiones para el tag anterior</td>
+		</tr>
+		<tr>
+			<td>&lt;div&gt;</td>
+			<td>Define un bloque que engloba elementos html</td>
+		</tr>
+		<tr>
+			<td>&lt;span&gt;</td>
+			<td>Define un contenedor de texto</td>
+		</tr>
+		
+	</table>
+	<p>Ejemplos:</p>
+	<h1>&lt;h1&gt;</h1>
+	<h2>&lt;h2&gt;</h2>
+	<h3>&lt;h3&gt;</h3>
+	<h4>&lt;h4&gt; ... etc</h4>
+	<br>
+	<h3>Link</h3>
+	<a href="https://www.google.com.mx">Éste es un link a google</a>
+	<br>
+	<h3>Imágen</h3>
+	<img src="simpson.jpg">
+	<br>
+	<h3>Texto preformateado</h3>
+	<pre>Este es
+				un texto
+							preformateado...</pre>
+	<br>
+	<h3>Cita</h3>
+	<q>Yo sólo sé que no sé nada</q>
+	<table>
+		<caption>Atributos básicos</caption>
+		<tr>
+			<th>Nombre</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>title</td>
+			<td>Información adicional que se muestra al señalar con el cursor</td>
+		</tr>
+		<tr>
+			<td>href</td>
+			<td>Define el url de un link</td>
+		</tr>
+		<tr>
+			<td>width y height</td>
+			<td>Determinan dimensiones de una imágen</td>
+		</tr>
+		<tr>
+			<td>src</td>
+			<td>Define el archivo de una imagen para desplegar</td>
+		</tr>
+		<tr>
+			<td>alt</td>
+			<td>Información del elemento en texto</td>
+		</tr>
+		<tr>
+			<td>class</td>
+			<td>Identifica un grupo de elementos por el mismo nombre</td>
+		</tr>
+		<tr>
+			<td>id</td>
+			<td>Identifica un elemento por un nombre único</td>
+		</tr>
+	</table>
+
+
+
+<h2 id ="2">Tags para dar formato</h3>
+		<p>
+		&lt;b&gt; - <b>Bold text</b><br><br>
+		&lt;strong&gt; - <strong>Important text</strong><br><br>
+		&lt;i&gt; - <i>Italic text</i><br><br>
+		&lt;em&gt; - <em>Emphasized text</em><br><br>
+		&lt;mark&gt; - <mark>Marked text</mark><br><br>
+		&lt;small&gt; - <small>Small text</small><br><br>
+		&lt;del&gt; - <del>Deleted text</del><br><br>
+		&lt;ins&gt; - <ins>Inserted text</ins><br><br>
+		&lt;sub&gt; - <sub>Subscript text</sub><br><br>
+		&lt;sup&gt; - <sup>Superscript text</sup>
+		</p>	
+<br>
+
+<h2 id="3">CSS</h2>
+<p>
+	CSS es un lenguaje que sirve para definir el diseño de una página HTML. Puede utilizarse por
+	medio del atributo <b>style</b> en un elemento HTML, dentro del tag <b>&lt;style&gt;</b>, o 
+	en un archivo externo referenciado con el tag <b>&lt;link&gt;</b> (ambos tags deben estar 
+	dentro de &lt;heading&gt;)
+</p>
+
+<table>
+	<caption>Propiedades CSS básicas </caption>
+	<tr>
+		<th>Nombre</th>
+		<th>Descripción</th>
+		<th>Ejemplo</th>
+	</tr>
+	<tr>
+		<td>color</td>
+		<td>Color del texto de un elemento html</td>
+		<td>color:blue</td>
+	</tr>
+	<tr>
+		<td>font-family</td>
+		<td>Tipo de letra de un texto</td>
+		<td>font-family: verdana</td>
+	</tr>
+	<tr>
+		<td>font-size</td>
+		<td>Tamaño de la letra</td>
+		<td>font-size: 160%</td>
+	</tr>
+	<tr>
+		<td>border</td>
+		<td>Define el borde de un elemento</td>
+		<td>border: 1px solid powderblue</td>
+	</tr>
+	<tr>
+		<td>padding</td>
+		<td>Define el espacio entre el texto y el borde de un elemento</td>
+		<td>padding: 30px</td>
+	</tr>
+	<tr>
+		<td>margin</td>
+		<td>Define espacio fuera del borde de un elemento</td>
+		<td>margin: 50px</td>
+	</tr>
+	<tr>
+		<td>background-color</td>
+		<td>Color del fondo de un elemento</td>
+		<td>background-color: powderblue</td>
+	</tr>
+	<tr>
+		<td>float</td>
+		<td>Define la posición de una imágen con respecto a un bloque de texto</td>
+		<td>float:right</td>
+	</tr>
+	<tr>
+		<td>text-align</td>
+		<td>Define la posición del texto</td>
+		<td>text-align: left</td>
+	</tr>
+	<tr>
+		<td>border-collapse</td>
+		<td>Junta los bordes de una tabla y sus celdas</td>
+		<td>border-collapse: collapse</td>
+	</tr>
+	<tr>
+		<td>border-spacing</td>
+		<td>Espaciamiento de un borde en una tabla</td>
+		<td>border-spacing: 5px</td>
+	</tr>
+</table>
+
+<h2 id="4">Tablas y listas</h2>
+<p>Dos elementos html utiles para organizar información son las tablas y listas</p>
+<table>
+	<caption>Tags para definir una tabla</caption>
+	<tr>
+			<td>&lt;Table&gt;</td>
+			<td>Define una tabla</td>
+		</tr>
+		<tr>
+			<td>&lt;tr&gt;</td>
+			<td>El renglón de una tabla</td>
+		</tr>
+		<tr>
+			<td>&lt;td&gt;</td>
+			<td>La celda de una tabla</td>
+		</tr>
+		<tr>
+			<td>&lt;caption&gt;</td>
+			<td>Define el título de una tabla</td>
+		</tr>
+</table>
+<br>
+<table>
+	<caption>Atributos de elementos de tablas</caption>
+	<tr>
+			<td>colspan</td>
+			<td>Hace que una celda de una tabla ocupe más de una columna</td>
+		</tr>
+		<tr>
+			<td>rowspan</td>
+			<td>Expande una celda de una tabla a más de un renglón</td>
+		</tr>
+</table>
+<p>
+	Existen dos tipos de listas: listas ordenadas que marcan cada uno de sus elementos con
+	números, listas no ordenadas que marcan cada uno de sus elementos indistintamente.
+</p>
+<table>
+	<caption>Tags para definir listas ordenadas y no ordenadas</caption>
+	<tr>
+		<td>&lt;ol&gt;</td>
+		<td>Define una lista ordenada</td>
+	</tr>
+	<tr>
+		<td>&lt;ul&gt;</td>
+		<td>Define una lista no ordenada</td>
+	</tr>
+
+	<tr>
+		<td>&lt;li&gt;</td>
+		<td>Define un elemento de la lista</td>
+	</tr>
+	<tr>
+		<td>&lt;dl&gt;</td>
+		<td>Define una lista de descripción</td>
+	</tr>
+	<tr>
+		<td>&lt;dt&gt;</td>
+		<td>Define el término de una descripción</td>
+	</tr>
+	<tr>
+		<td>&lt;dd&gt;</td>
+		<td>Define la descripción</td>
+	</tr>
+</table>
+<p>Algunos atributos importantes de las listas</p>
+<dl>
+	<dt>list-style-type</dt>
+	<dd>Propiedad css para definir los marcadores de los items</dd>
+	<dt>type</dt>
+	<dd>Atributo html para tablas ordenadas que define el tipo de marcador</dd>
+	<dt>float:left y display:inline</dt>
+	<dd>Propiedades css para hacer una tabla horizontal</dd>
+</dl>
+<p>Esta es una lista ordenada: </p>
+<ol>
+	<li>Primer elemento</li>
+	<li>Segundo elemento</li>
+	<li>Tercer elemento</li>
+</ol>
+<p>Una lista no ordenada</p>
+<ul>
+	<li>Elemento</li>
+	<li>Elemento</li>
+	<li>Elemento</li>
+</ul>
+
+<h2 id="5">&lt;Iframe&gt;</h2>
+<p>
+	Iframe es un elemento que permite desplegar una pagina web dentro de otra. Se 
+	puede mostrar el contenido de un link dentro de un iframe con la propiedad <i>target</i>
+	del link.
+	<br>
+	&lt;iframe name&gt;=&lt;a target&gt;
+	<br>
+	<a href="p2.html" target="f1">Página a</a>
+	<br>
+	<a href="pB.html" target="f1">Página b</a>
+</p>
+
+<iframe src="p2.html" height="400px" width="600px" name="f1"></iframe>
+
+<h2 id="6">Head y metadata</h2>
+<p>
+	El tag &lt;head&gt; sirve para incluir información que no se mostrará en la página web, 
+	pero que es util para diferentes programas al manejar el archivo HTML. Dentro de éste se utiliza
+	el tag &lt;metadata&gt; que tiene diferentes atributos utiles, entre ellos:
+</p>
+<br>
+<table>
+	<caption>Atributos de metadata</caption>
+	<tr>
+		<td>Define el conjunto de caractéres</td>
+		<td>charset = "UTF-8"</td>
+	</tr>
+	<tr>
+		<td>Da una descripción de la página web</td>
+		<td>name ="description" content ="Free web tutorials"</td>
+	</tr>
+	<tr>
+		<td>Define keywords para un buscador</td>
+		<td>name ="keywords" content ="HTML, CSS"</td>
+	</tr>
+	<tr>
+		<td>Define el autor</td>
+		<td>name ="author" content ="Jogn Doe"</td>
+	</tr>
+	<tr>
+		<td>Define un lapso en que se debe recargar la página en segundos</td>
+		<td>http-equiv="refresh" content ="30"</td>
+	</tr>
+	<tr>
+		<td>Utiliza el viewport para escalar la página al tamaño del aparato que la visualiza</td>
+		<td>name ="viewport" content ="width=device-width, initial-scale=1.0"</td>
+	</tr>
+</table>
+
+<h2 id="7">Layout</h2>
+<p>
+La dispoción del texto en una página se puede determinar con CSS, pero aun así existen tags que ayudan a organizzar
+los elementos de una página
+</p>
+<table>
+	<caption>Tags para definir elementos del layout</caption>
+	<tr>
+		<th>Tag</th>
+		<th>Descripción</th>
+	</tr>
+	<tr>
+		<td>&lt;header&gt;</td>
+		<td>Encabezado</td>
+	</tr>
+	<tr>
+		<td>&lt;nav&gt;</td>
+		<td>Menú de navegación</td>
+	</tr>
+	<tr>
+		<td>&lt;section&gt;</td>
+		<td>sección</td>
+	</tr>
+	<tr>
+		<td>&lt;article&gt;</td>
+		<td>Artículo independiente</td>
+	</tr>
+	<tr>
+		<td>&lt;aside&gt;</td>
+		<td>Contenído lateral</td>
+	</tr>
+	<tr>
+		<td>&lt;footer&gt;</td>
+		<td>Contenido en el pie de la página</td>
+	</tr>
+	<tr>
+		<td>&lt;details&gt;</td>
+		<td>Información extra</td>
+	</tr>
+	<tr>
+		<td>&lt;summary&gt;</td>
+		<td>Sirve de encabezado para &lt;details&gt;</td>
+	</tr>
+</table>
+<img src="elemLayout.jpg" width="350px" height="400px">
+<h2 id ="8">Forms</h2>
+<p>
+	El elemento &lt;form&gt; sirve para que un usuario puede ingresar y mandar información. Utiliza el atributo
+	<i>action</i> para definir la página a donde se mandará la información.<br>
+</p>
+<table>
+	<caption>Elementos notables de form</caption>
+	<tr>
+		<th>Elemento</th>
+		<th>Descripción</th>
+	</tr>
+	<tr>
+		<td>&lt;input&gt;</td>
+		<td>Elemento para introducir información</td>
+	</tr>
+	<tr>
+		<td>&lt;textarea&gt;</td>
+		<td>Cuadro de texto</td>
+	</tr>
+	<tr>
+		<td>&lt;label&gt;</td>
+		<td>Texto relacionado a un input</td>
+	</tr>
+	<tr>
+		<td>&lt;fieldset&gt;</td>
+		<td>Agrupa elementos de un form</td>
+	</tr>
+	<tr>
+		<td>&lt;select&gt;</td>
+		<td>Drop down list</td>
+	</tr>
+	<tr>
+		<td>&lt;optgroup&gt;</td>
+		<td>Agrupa elementos de un drop down list</td>
+	</tr>
+	<tr>
+		<td>&lt;option&gt;</td>
+		<td>Define una de las opciones del drop down list</td>
+	</tr>
+	<tr>
+	<td>&lt;button&gt;</td>
+	<td>Botón</td>
+	</tr>
+	</table>
+	<br>
+	<p>Por su importancia, el elemento input tiene varios atributos importantes</p>
+	<table>
+		<caption>Atributos importantes de <i>input</i></caption>
+		<tr>
+			<th>Atributo</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>value</td>
+			<td>Valor inicial</td>
+		</tr>
+		<tr>
+			<td>readonly</td>
+			<td>Hace que el valor no se pueda modificar</td>
+		</tr>
+		<tr>
+			<td>disabled</td>
+			<td>Desabilita el input</td>
+		</tr>
+		<tr>
+			<td>size</td>
+			<td>tamaño</td>
+		</tr>
+		<tr>
+			<td>maxlength</td>
+			<td>Tamaño máximo de la entrada</td>
+		</tr>
+	</table>
+	<table>
+		<caption>Valores notables del atributo <i>type</i></caption>
+		<tr>
+			<th>Atributo</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>text</td>
+			<td>Linea de texto</td>
+		</tr>
+		<tr>
+			<td>password</td>
+			<td>contraseña</td>
+		</tr>
+		<tr>
+			<td>submit</td>
+			<td>botón que manda la información</td>
+		</tr>
+		<tr>
+			<td>reset</td>
+			<td>restablece los datos ingresados en el form a los datos default</td>
+		</tr>
+		<tr>
+			<td>radio</td>
+			<td>botón de selección excluyente</td>
+		</tr>
+		<tr>
+			<td>checkbox</td>
+			<td>botón de selección incluyente</td>
+		</tr>
+	</table>
+	<form>
+	<fieldset>
+	<p>Ejemplos del elemento input</p>
+	<h3>Text</h3>
+	<input type="text" name="1">
+	<h3>Password</h3>
+	<input type="password" name="2">
+	<h3>submit</h3>
+	<input type="submit" name="3">
+	<h3>Reset</h3>
+	<input type="reset" name="4">
+	<h3>Radio</h3>
+	<input type="radio" name="5">
+	<h3>Checkbox</h3>
+	<input type="check" name="6">
+	</fieldset>
+	</form>
+	<p>Otros valores para type (algunos solo en HTML5)</p>
+	<ul>
+		<li>color</li>
+		<li>date</li>
+		<li>range</li>
+		<li>number</li>
+		<li>url</li>
+		<li>etc.</li>
+	</ul>
+
+</body>
+</html>

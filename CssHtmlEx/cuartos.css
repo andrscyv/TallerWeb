@@ -1,0 +1,22 @@
+html,body{
+			height: 100%;
+			margin: 0;
+		}
+#arriba{
+	height: 50%;
+	background-color: red;
+}
+#abajo{
+	height: 50%;
+	background-color: blue;
+}
+#I{
+	width: 50%;
+	height:100%;
+	background-color: green;
+}
+#D{
+	width: 50%;
+	height: 100%;
+	background-color:yellow;
+}

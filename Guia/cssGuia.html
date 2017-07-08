@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GuiaCSS</title>
+<style type="text/css">
+	
+}
+table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
+			border: 2px solid blue;
+			text-align: center;
+		}
+</style>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<h1>Guía CSS</h1>
+<h2>Introducción</h2>
+<p>
+	Css es un lenguaje que determina el diseño en el que se desplegara una página HTML. Su importancia
+	radica en que separa el contenido textual de una página de su diseño gráfico. <br>
+	Su sintaxis básica es:
+</p>
+<table>
+	<tr>
+		<th>Selector</th>
+		<th>Declaración</th>
+	</tr>
+	<tr>
+		<td>h1</td>
+		<td>{color:blue;}</td>
+	</tr>
+</table>
+<p>El selector puede ser por elemento, por id o por clase: </p>
+<table>
+	<tr>
+		<td>Por elemento</td>
+		<td>p</td>
+		<td>{color:blue}</td>
+	</tr>
+	<tr>
+		<td>Por id</td>
+		<td>#idArbitrario</td>
+		<td>{color:blue}</td>
+	</tr>
+	<tr>
+		<td>Por clase</td>
+		<td>.nombreclase</td>
+		<td>{color:blue}</td>
+	</tr>
+</table>
+<p>
+	Además, el código css se puede escribir en un elemento por medio del atributo <i>style</i>,
+	dentro del html en el elemento &lt;head&gt; o en una página .css referenciada en el 
+	elemento  <br>&lt;link rel="stylesheet" type="text/css" href="archivo.css" &gt;
+</p>
+
+<h2>Colores y background</h2>
+<p>
+	Los colores se pueden especificar de tres formas
+</p>
+<table>
+	<tr>
+		<th>Color rojo</th>
+		<th>Código</th>
+	</tr>
+	<tr>
+		<td style="background-color:rgb(255,0,0)"></td>
+		<td>background-color:rgb(255,0,0)</td>
+		<td>Valor rgb</td>
+	</tr>
+	<tr>
+		<td style="background-color:#FF0000"></td>
+		<td>background-color:#FF0000</td>
+		<td>Valor hexadecimal</td>
+	</tr>
+	<tr>
+		<td style="background-color:red"></td>
+		<td>background-color:red</td>
+		<td>Nombre</td>
+	</tr>
+</table>
+
+<p>La propiedad background 	tiene las siguientes formas</p>
+<ul>
+	<li>background (color - image - repeat - attachment - position)</li>
+	<li>background-attachment</li>
+	<li>background-color</li>
+	<li>background-image</li>
+	<li>background-position</li>
+	<li>background-repeat</li>
+</ul>
+<div></div>
+
+<h2>Border , Margin y Padding</h2>
+<p>La propiedad border define el borde de un elemento</p>
+<ul>
+	<li>border (width - style - color)</li>
+	<li>border-(top;right;bottom;left)</li>
+	<li>border-color</li>
+	<li>border-style</li>
+	<li>border-radius</li>
+</ul>
+<p>
+	Cada border-<i>posición</i> se le puede añadir los otros sufijos, por ejemplo:<br>
+	border-top-color <br>
+	Además se puede escribir de forma compacta la definicion de cualquiera de los borders: <br>
+	border-top:width  style  color 
+</p>
+<p style="width:300px;border: 4px dotted blue">
+	Este es un ejemplo <br> <i>style="width:300px;border: 4px dotted blue"</i>
+</p>
+<p>
+	La propiedad margin define la distancia entre un elemento y el elemento que lo contiene, sus formas
+	son:
+</p>
+<ul>
+	<li>margin: top right bottom left</li>
+	<li>margin-top</li>
+	<li>margin-right</li>
+	<li>margin-bottom</li>
+	<li>margin-left</li>
+</ul>
+<p style="background-color:lightblue;margin: 20px 40px 30px 300px">
+	Este es un ejemplo de un párrafo con el márgen modificado <br>
+	<i>style="background-color:lightblue;margin: 20px 40px 30px 300px"</i>
+</p>
+<br>
+<p>
+	La propiedad padding determina la distancia entre el contenido de un elemento y su borde, sus formas son :
+</p>
+<ul>
+	<li>padding: top right bottom left</li>
+	<li>padding-top</li>
+	<li>padding-right</li>
+	<li>padding-bottom</li>
+	<li>padding-left</li>
+</ul>
+<p style="background-color:lightblue;padding: 40px 20px">
+	Este es un ejemplo de un párrafo con el padding modificado <br>
+	<i>style="background-color:lightblue;padding: 40px 20px"</i>
+</p>
+
+<h2>Texto</h2>
+<p>
+	Algunas propiedades importantes para formatear texto son:
+</p>
+<ul>
+	<li>color</li>
+	<li>letter-spacing</li>
+	<li>line-height</li>
+	<li>text-align</li>
+	<li>text-decoration</li>
+	<li>text-indent</li>
+	<li>text-transform</li>
+</ul>
+<p style="color:red;text-align:center;letter-spacing: 6px">
+	Este es un ejemplo de texto con formato modificado <br> <i>style="color:red;text-align:center;letter-spacing: 6px"</i>
+</p>
+<p>
+	Para modificar el tipo de fuente del texto:
+</p>
+<ul>
+	<li>font: style variant weight size/line-height family</li>
+	<li>font-family</li>
+	<li>font-size</li>
+	<li>font-style</li>
+	<li>font-variant</li>
+	<li>font-weight</li>
+</ul>
+<p style="font:15px verdana;">Este es ejemplo de un texto con la fuente modificada y <i>style="font:15px verdana;"</i></p>
+
+<h2>Iconos</h2>
+<p>
+	Los iconos son objetos visuales que se despliegan dentro de un elemento como &lt;span&gt; o &lt;i&gt;.
+	Para poder utilizarlos es necesario referenciar librerias de íconos en un &lt;link rel="stylesheet" href="<i>url de la libreria</i>"&gt;. Algunas librerias se encuentran en las siguientes direcciones:
+</p>
+<ul>
+	<li>Font Awesome Icon: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css </li>
+	<li>Bootstrap Icons: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</li>
+	<li>Google Icons: https://fonts.googleapis.com/icon?family=Material+Icons</li>
+</ul>
+<p>
+	Estos son algunos íconos de Google:
+</p>
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+
+<h2>Listas y tablas</h2>
+<p>
+	Para modificar el formato de las tablas se utilizan las siguientes propiedades css:
+</p>
+<ul>
+	<li>list-style: type position image</li>
+	<li>list-style-image</li>
+	<li>list-style-position</li>
+	<li>list-style-type</li>
+</ul>
+<p>Ejemplo con <i>style="list-style: upper-alpha outside;"</i></p>
+<ol style="list-style: upper-alpha outside;">
+	<li>Primer elemento</li>
+	<li>Segundo elemento</li>
+	<li>Tercer elemento</li>
+</ol>
+
+<p>
+	Algunas propiedades importantes para dar formato a las tablas
+</p>
+<ul>
+	<li>border-collapse</li>
+	<li>vertical-align</li>
+	<li>tr:hover</li>
+	<li>tr:nth-child()</li>
+	<li>&lt;div style="overflow-x:auto;"&gt;</li>
+	<li>border-spacing</li>
+</ul>
+<table class="ej">
+	<caption class="ej">Este es un ejemplo</caption>
+	<tr class="ej">
+		<th class="ej">Número</th>
+		<th class="ej">Letra</th>
+	</tr class="ej"> 
+	<tr class="ej">
+		<td class="ej">1</td>
+		<td class="ej">a</td>
+	</tr class="ej">
+	<tr class="ej">
+		<td class="ej">2</td>
+		<td class="ej">b</td>
+	</tr class="ej">
+	<tr class="ej">
+		<td class="ej">3</td>
+		<td class="ej">c</td>
+	</tr>
+</table>
+<h2>Propiedad position</h2>
+<p>
+	La propiedad posición define con respecto a qué se va a determinar la posición de un elemento
+</p>
+<table>
+	<caption>Position</caption>
+	<tr>
+		<th>Valor</th>
+		<th>Descripción</th>
+	</tr>
+	<tr>
+		<td>static</td>
+		<td>El elemento se posiciona automaticamente con respecto a la página, las propiedades
+			top, bottom, left, and right no lo afectan</td>
+	</tr>
+	<tr>
+		<td>relative</td>
+		<td>La posición se define con respecto a la posición static del elemento</td>
+	</tr>
+	<tr>
+		<td>fixed</td>
+		<td>La posición se define con respecto a la ventana del browser (viewport) </td>
+	</tr>
+	<tr>
+		<td>absolute</td>
+		<td>La posición se define con respecto a un elemento ancentro con propiedad posición diferente
+		 de static</td>
+	</tr>
+</table>
+<p>Otro atributo importante es el z-index, que determina el orden en que se sobreponen los elementos</p>
+<div style="position:relative"><img src="simpson.jpg" style="width: 500px;height: 250px">
+	<p style="position: absolute;top: 10px;left: 10px">Este texto tiene posicion absoluta al div que contiene la imagen</p>
+</div>
+
+<h2>Overflow y float</h2>
+<p>
+	Overflow es una propiedad que determina qué hacer con texto cuando se sale del elemento que lo debería
+	contener. La propiedad se puede especificar para ser horizontal o vertical:
+</p>
+<ul>
+	<li>overflow</li>
+	<li>overflow-x</li>
+	<li>overflow-y</li>
+</ul>
+<p>
+	Algunos valores que toma:
+</p>
+<ul>
+	<li>visible - Se muestra el texto que se desborda</li>
+	<li>hidden - se corta el texto que se desborda</li>
+	<li>scroll - añade una barra para visualizar el texto que se desborda</li>
+	<li>auto - añade barra si es necesario</li>
+</ul>
+<p>Ejemplo: </p>
+<div style="background-color: lightblue;width: 150px;height: 50px;overflow: auto;"> 
+	El texto dentro de este div va a exceder las dimensiones especificadas, por lo que es necesario agregar una scrollbar
+	para poder visualizar la totalidad del contenido.
+</div>
+<p> La propiedad float y clear se utiliza para crear layouts</p>
+<div style="height: 200px;width:80%;background-color: lightblue;">
+	<img src="simpson.jpg" style="float: left;width: 300px;height: 200px"> 
+	Este es un div que tiene anidada una imágen con la propiedad <i>float: left</i>
+</div>
+
+<h2>Combinators, Pseudo-class y Pseudo-element</h2>
+<p>
+	Son elementos para usar con los selectores :
+</p>
+<table>
+	<tr>
+		<th>Combinator</th>
+		<th>Descripción</th>
+	</tr>
+	<tr>
+		<td> (espacio) </td>
+		<td> Selecciona a todos los elementos anidados </td>
+	</tr>
+	<tr>
+		<td> &gt; </td>
+		<td> Selecciona los elementos anidados solo un nivel debajo</td>
+	</tr>
+	<tr>
+		<td> + </td>
+		<td>Selecciona el siguiente hermano</td>
+	</tr>
+	<tr>
+		<td> ~ </td>
+		<td>Selecciona todos los hermanos</td>
+	</tr>
+</table>
+<p>
+	Pseudo-class se utiliza con el selector para seleccionar tipos predefinidos:
+</p>
+<ul>
+	<li>:hover - cuando un elemento tiene el cursor encima</li>
+	<li>:first-child - selecciona si es primer hijo</li>
+	<li>:focus - Seleccina los inputs a los que se les ha dado click</li>
+</ul>
+<p>
+	Pseudo-elements se utiliza para seleccionar partes predefinidas
+</p>
+<ul>
+	<li>::after</li>
+	<li>::before</li>
+	<li>::first-letter</li>
+	<li>::first-line</li>
+	<li>::selection</li>
+</ul>
+</body>
+</html>
