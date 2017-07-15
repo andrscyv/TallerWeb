@@ -2,8 +2,24 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="ex3.css">
 </head>
 <body>
+<div class="header">
+	Idiomas
+	<select name="idiomas" onchange="nuevoIdioma(this)">
+	  <option></option>
+	  <option value="sinSel">Selecciona Idioma</option>
+	  <option value="Ingles">Ingles</option>
+	  <option value="Espanol">Espanol</option>
+	  <option value="Frances">Frances</option>
+	  <option value="Aleman">Aleman</option>
+	</select>
+<input type="button" value="Aceptar" onclick="muestraSel()">
+</div>
+<div id="d1"></div>
+<div id="d2"></div>
 
+<script type="text/javascript" src = "ex3.js"></script>
 </body>
 </html>
