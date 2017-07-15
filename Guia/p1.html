@@ -2,22 +2,39 @@
 <html>
 <head>
 	<title>GuiaHTML</title>
+	<link rel="stylesheet" type="text/css" href="p1.css">
 </head>
 <body>
-<h1 > Guía HTML </h1>
-<h2>Indice</h2>
-<ul> 
-	<li><a href="#1">Introdución</a></li>
-	<li><a href="#2">Tags para dar formato</a></li>
-	<li><a href="#3">CSS</a></li>
-	<li><a href="#4">Tablas y listas</a></li>
-	<li><a href="#5">Iframe</a></li>
-	<li><a href="#6">Head y metadata</a></li>
-	<li><a href="#7">Layout</a></li>
-	<li><a href="#8">Forms</a></li>
+<div class="navWrap">
+<ul class="nav mAcos nav2"> 
+	<li id="indice">Indice</li>
+	<li><a href="#h1">Introdución</a></li>
+	<li><a href="#h2">Tags para dar formato</a></li>
+	<li><a href="#h3">CSS</a></li>
+	<li><a href="#h4">Tablas y listas</a></li>
+	<li><a href="#h5">Iframe</a></li>
+	<li><a href="#h6">Head y metadata</a></li>
+	<li><a href="#h7">Layout</a></li>
+	<li><a href="#h8">Forms</a></li>
 </ul>
+</div>
 <!--<img src="/Users/El_jefe/Documents/imagenhtml/god.jpg" style="width:300px;height: 300px">-->
-<h2 id ="1">Introducción</h2>
+<!--<img id="fondo" src="playa.jpg">-->
+<div class="header headerA">
+<h1 id="head">Guía HTML</h1>
+<div class="cMenuH">
+	<ul class="menuH mAcos" >
+	  <li><a href="#home">Página principal</a></li>
+	  <li><a href="#news">HTML</a></li>
+	  <li><a href="#contact">Contacto</a></li>
+	  <li><a href="#about">Origen</a></li>
+	</ul>
+	</div>
+</div>
+
+<div id ="mIzq">
+<div class="soporte">
+<h2 id ="h1" class="titulo tituloA">Introducción</h2>
 	<p>
 	HTML o <i> Hyper Text Markup Language</i> es un lenguaje para describir el contenido de páginas web. Las unidades fundamentales del lenguaje son los <i>elementos html</i> identificados por "tags" : &lt; &gt;. Éstos tienen atributos que los identifican o modifican su contenido.
 	</p>
@@ -102,6 +119,8 @@
 		</tr>
 		
 	</table>
+	</div>
+	<div class="ejemplos">
 	<p>Ejemplos:</p>
 	<h1>&lt;h1&gt;</h1>
 	<h2>&lt;h2&gt;</h2>
@@ -121,6 +140,7 @@
 	<br>
 	<h3>Cita</h3>
 	<q>Yo sólo sé que no sé nada</q>
+	</div>
 	<table>
 		<caption>Atributos básicos</caption>
 		<tr>
@@ -158,8 +178,8 @@
 	</table>
 
 
-
-<h2 id ="2">Tags para dar formato</h3>
+<div class="soporte">
+<h2 id ="h2" class="titulo">Tags para dar formato</h2>
 		<p>
 		&lt;b&gt; - <b>Bold text</b><br><br>
 		&lt;strong&gt; - <strong>Important text</strong><br><br>
@@ -173,8 +193,9 @@
 		&lt;sup&gt; - <sup>Superscript text</sup>
 		</p>	
 <br>
-
-<h2 id="3">CSS</h2>
+</div>
+<div class="soporte">
+<h2 id="h3" class="titulo">CSS</h2>
 <p>
 	CSS es un lenguaje que sirve para definir el diseño de una página HTML. Puede utilizarse por
 	medio del atributo <b>style</b> en un elemento HTML, dentro del tag <b>&lt;style&gt;</b>, o 
@@ -245,8 +266,9 @@
 		<td>border-spacing: 5px</td>
 	</tr>
 </table>
-
-<h2 id="4">Tablas y listas</h2>
+</div>
+<div class="soporte">
+<h2 id="h4" class="titulo">Tablas y listas</h2>
 <p>Dos elementos html utiles para organizar información son las tablas y listas</p>
 <table>
 	<caption>Tags para definir una tabla</caption>
@@ -332,8 +354,8 @@
 	<li>Elemento</li>
 	<li>Elemento</li>
 </ul>
-
-<h2 id="5">&lt;Iframe&gt;</h2>
+</div>
+<h2 id="h5" class="titulo">&lt;Iframe&gt;</h2>
 <p>
 	Iframe es un elemento que permite desplegar una pagina web dentro de otra. Se 
 	puede mostrar el contenido de un link dentro de un iframe con la propiedad <i>target</i>
@@ -348,7 +370,7 @@
 
 <iframe src="p2.html" height="400px" width="600px" name="f1"></iframe>
 
-<h2 id="6">Head y metadata</h2>
+<h2 id="h6" class="titulo">Head y metadata</h2>
 <p>
 	El tag &lt;head&gt; sirve para incluir información que no se mostrará en la página web, 
 	pero que es util para diferentes programas al manejar el archivo HTML. Dentro de éste se utiliza
@@ -383,7 +405,7 @@
 	</tr>
 </table>
 
-<h2 id="7">Layout</h2>
+<h2 id="h7" class="titulo">Layout</h2>
 <p>
 La dispoción del texto en una página se puede determinar con CSS, pero aun así existen tags que ayudan a organizzar
 los elementos de una página
@@ -428,7 +450,7 @@ los elementos de una página
 	</tr>
 </table>
 <img src="elemLayout.jpg" width="350px" height="400px">
-<h2 id ="8">Forms</h2>
+<h2 id ="h8" class="titulo">Forms</h2>
 <p>
 	El elemento &lt;form&gt; sirve para que un usuario puede ingresar y mandar información. Utiliza el atributo
 	<i>action</i> para definir la página a donde se mandará la información.<br>
@@ -501,6 +523,7 @@ los elementos de una página
 			<td>Tamaño máximo de la entrada</td>
 		</tr>
 	</table>
+	<br>
 	<table>
 		<caption>Valores notables del atributo <i>type</i></caption>
 		<tr>
@@ -558,6 +581,6 @@ los elementos de una página
 		<li>url</li>
 		<li>etc.</li>
 	</ul>
-
+</div>
 </body>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guia Js</title>
+	<link rel="stylesheet" type="text/css" href="jsGuia.css">
+</head>
+<body>
+<ul class="nav mAcos nav2"> 
+	<li id="indice">Indice</li>
+	<li><a href="#c1">Output</a></li>
+	<li><a href="#c2">Objetos en JS</a></li>
+	<li><a href="#c3">Eventos</a></li>
+	<li><a href="#c4">Caracteres especiales</a></li>
+	<li><a href="#c5">String</a></li>
+	<li><a href="#c6">Arreglos</a></li>
+	<li><a href="#c7">Tipos</a></li>
+
+</ul>
+<div class = "header">
+<h1 id="head">Guía JavaScript</h1>
+	<ul class="menuH mAcos">
+	  <li><a href="#home">Página principal</a></li>
+	  <li><a href="#news">HTML</a></li>
+	  <li><a href="#contact">Contacto</a></li>
+	  <li><a href="#about">Origen</a></li>
+	</ul>
+</div>
+<div id= "mIzq">
+<h2 class="titulo" id="c1">Output</h2>
+<p>
+	Algunas formas de escribir en una página
+</p>
+<ul>
+	<li>document.getElementById(id).innerHTML</li>
+	<li>document.write()</li>
+	<li>window.alert()</li>
+	<li>console.log()</li>
+</ul>
+
+<h2 class="titulo" id="c2">Objetos en JavaScript</h2>
+<p>
+	En JS un objeto es un arreglo de parejas <i>key : value</i>, puede 
+	guardar valores primitivos y funciones. 
+	<br>Ejemplo: 
+	<br>var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }};
+    <br>
+    Los atributos se pueden accesar como : 
+</p>
+<ul>
+	<li>objeto.nomAtributo</li>
+	<li>objeto["nomAtributo"]</li>
+	<li>objeto.nomFuncion()</li>
+	<li>objeto.nomFuncion -<i>Da la definicion de la funcion</i>-</li>
+</ul>
+
+<h2 class="titulo" id="c3">Eventos</h2>
+<p>
+	Esta es una lista de atributos que manejan eventos
+</p>
+<ul>
+	<li>onchange</li>
+	<li>onclick</li>
+	<li>onmouseover</li>
+	<li>onmouseout</li>
+	<li>onkeydown</li>
+	<li>onload</li>
+</ul>
+<h2 class="titulo" id="c4">Representacion de algunos caracteres especiales</h2>
+<ul>
+	<li>\b - backspace</li>
+	<li>\r - inicio de linea sin bajar</li>
+	<li>\f - form feed</li>
+	<li>\t - tabulador horizontal</li>
+	<li>\v - tabulador vertical</li>
+</ul>
+
+<h2 class="titulo" id="c5">Algunos metodos de string</h2>
+<p>
+	En js los string NO se pueden accesar como arreglos ("str[indice]"), en los 
+	metodos se empieza a contar caracteres por el 0.
+</p>
+<ul>
+	<li>str.length</li>
+	<li>str.indexOf()</li>
+	<li>str.lastIndexOf()</li>
+	<li>str.search()</li>
+	<li>str.slice()</li>
+	<li>str.substring()</li>
+	<li>str.substr()</li>
+	<li>str.replace()</li>
+	<li>str.toUpperCase()</li>
+	<li>str.charAt()</li>
+	<li>str.split("separador")</li>
+</ul>
+
+<h2 class="titulo" id="c6"> Arreglos </h2>
+<p>
+	Estos son algunos metodos nativos de los arreglos en JS
+</p>
+<ul>
+	<li>arr.push(nuevo elem) - añade al final</li>
+	<li>Array.isArray(posibleArreglo)</li>
+	<li>arr.toString() - da los elementos separados por comas</li>
+	<li>arr.join("separador")</li>
+	<li>arr.pop() - regresa y saca el ultimo elemento</li>
+	<li>arr.shift() - recresa y saca el primer elemento y recorre los demas</li>
+	<li>arr.unshift(nuevo elem) - inserta al inicio y regresa el nuevo tamaño </li>
+	<li>arr.splice(pos, num elementos a quitar, elem insertar,elem insertar...)</li>
+	<li>arr.concat()</li>
+	<li>arr.slice(pos) - regresa nuevo arreglo empezando en pos</li>
+	<li>arr.sort() - por orden alfabetico</li>
+	<li>arr.reverse()</li>
+	<li>arr.sort(function(a,b){return a-b}) - ordena números</li>
+	<li>arr.sort(function(a, b){return 0.5 - Math.random()}) - da orden aleatorio</li>
+</ul>
+
+<h2 class="titulo" id="c7"> Convertir tipos</h2>
+<ul>
+	<li>Number()</li>
+	<li>String()</li>
+</ul>
+</div>
+</body>
+</html>

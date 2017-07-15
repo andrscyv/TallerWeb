@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>GuiaCSS</title>
-<style type="text/css">
-	
+	<link rel="stylesheet" type="text/css" href="cssGuia.css">
+<style type="text/css">	
 }
 table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 			border: 2px solid blue;
@@ -13,8 +13,31 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<h1>Guía CSS</h1>
-<h2>Introducción</h2>
+<ul class="nav mAcos nav2"> 
+	<li id="indice">Indice</li>
+	<li><a href="#1">Introducción</a></li>
+	<li><a href="#2">Colores y Background</a></li>
+	<li><a href="#3">Border, margin y padding</a></li>
+	<li><a href="#4">Texto</a></li>
+	<li><a href="#5">Icono</a></li>
+	<li><a href="#6">Listas y tablas</a></li>
+	<li><a href="#7">Propiedad position</a></li>
+	<li><a href="#8">Overflow y float</a></li>
+	<li><a href="#9">Combinators, pseudo-class y pseudo-element</a></li>
+
+</ul>
+<!--<img id="fondo" src="mar.jpg">-->
+<div class="header">
+<h1 id="head">Guía CSS</h1>
+	<ul class="menuH mAcos">
+	  <li><a href="#home">Página principal</a></li>
+	  <li><a href="#news">HTML</a></li>
+	  <li><a href="#contact">Contacto</a></li>
+	  <li><a href="#about">Origen</a></li>
+	</ul>
+</div>
+<div id="mIzq">
+<h2 id="1" class="titulo tituloA">Introducción</h2>
 <p>
 	Css es un lenguaje que determina el diseño en el que se desplegara una página HTML. Su importancia
 	radica en que separa el contenido textual de una página de su diseño gráfico. <br>
@@ -54,7 +77,7 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 	elemento  <br>&lt;link rel="stylesheet" type="text/css" href="archivo.css" &gt;
 </p>
 
-<h2>Colores y background</h2>
+<h2 id="2" class="titulo">Colores y background</h2>
 <p>
 	Los colores se pueden especificar de tres formas
 </p>
@@ -91,7 +114,7 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 </ul>
 <div></div>
 
-<h2>Border , Margin y Padding</h2>
+<h2 id="3" class="titulo">Border , Margin y Padding</h2>
 <p>La propiedad border define el borde de un elemento</p>
 <ul>
 	<li>border (width - style - color)</li>
@@ -169,7 +192,7 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 </ul>
 <p style="font:15px verdana;">Este es ejemplo de un texto con la fuente modificada y <i>style="font:15px verdana;"</i></p>
 
-<h2>Iconos</h2>
+<h2 id="4" class="titulo">Iconos</h2>
 <p>
 	Los iconos son objetos visuales que se despliegan dentro de un elemento como &lt;span&gt; o &lt;i&gt;.
 	Para poder utilizarlos es necesario referenciar librerias de íconos en un &lt;link rel="stylesheet" href="<i>url de la libreria</i>"&gt;. Algunas librerias se encuentran en las siguientes direcciones:
@@ -188,7 +211,7 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 <i class="material-icons">computer</i>
 <i class="material-icons">traffic</i>
 
-<h2>Listas y tablas</h2>
+<h2 id="6" class="titulo">Listas y tablas</h2>
 <p>
 	Para modificar el formato de las tablas se utilizan las siguientes propiedades css:
 </p>
@@ -235,7 +258,7 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 		<td class="ej">c</td>
 	</tr>
 </table>
-<h2>Propiedad position</h2>
+<h2 id="5" class="titulo">Propiedad position</h2>
 <p>
 	La propiedad posición define con respecto a qué se va a determinar la posición de un elemento
 </p>
@@ -265,11 +288,11 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 	</tr>
 </table>
 <p>Otro atributo importante es el z-index, que determina el orden en que se sobreponen los elementos</p>
-<div style="position:relative"><img src="simpson.jpg" style="width: 500px;height: 250px">
+<div style="position:relative;width: 100%"><img src="simpson.jpg" style="width: 500px;height: 250px">
 	<p style="position: absolute;top: 10px;left: 10px">Este texto tiene posicion absoluta al div que contiene la imagen</p>
 </div>
 
-<h2>Overflow y float</h2>
+<h2 id="7" class="titulo">Overflow y float</h2>
 <p>
 	Overflow es una propiedad que determina qué hacer con texto cuando se sale del elemento que lo debería
 	contener. La propiedad se puede especificar para ser horizontal o vertical:
@@ -299,7 +322,7 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 	Este es un div que tiene anidada una imágen con la propiedad <i>float: left</i>
 </div>
 
-<h2>Combinators, Pseudo-class y Pseudo-element</h2>
+<h2 id="8" class="titulo">Combinators, Pseudo-class y Pseudo-element</h2>
 <p>
 	Son elementos para usar con los selectores :
 </p>
@@ -343,5 +366,6 @@ table.ej,th.ej,caption.ej,tr.ej{	border-collapse: collapse;
 	<li>::first-line</li>
 	<li>::selection</li>
 </ul>
+</div>
 </body>
 </html>
