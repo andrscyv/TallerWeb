@@ -58,8 +58,8 @@ function quitaIdioma(elem){
 	ind = findId(elem.parentNode.id);
 	console.log("busca : "+elem.parentNode.id+" res: "+ind);
 	id.splice(ind,1);
-	var div =document.getElementById('elem.parentNode.id');
-	document.getElementById('d1').innerHTML = imprimeIdiomas();
+	var div =document.getElementById(elem.parentNode.id);
+	div.parentNode.removeChild(div);
 }
 function elegirNiv(elem){
 	var idDiv = elem.parentNode.id;
