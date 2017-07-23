@@ -6,7 +6,7 @@ function Idioma(id,nom,nivel){
 	this.nom = nom;
 	this.nivel = nivel;
 }
-function nuevoIdioma(elem){
+/*function nuevoIdioma(elem){
 	var nomId = elem.value;
 	if(nomId != "sinSel"){
 	if(!idiomaRepetido(nomId)){
@@ -18,6 +18,32 @@ function nuevoIdioma(elem){
 }
 else
 window.alert("Seleccione un idioma");
+}*/
+function nuevoIdioma(elem){
+	var nomId = elem.value;
+	if(nomId != "sinSel"){
+	if(!idiomaRepetido(nomId)){
+		idN = serial;
+		id[id.length] = new Idioma(idN,nomId);
+		serial++;
+		meteNodos(idN,nomId);
+	}
+}
+else
+window.alert("Seleccione un idioma");
+}
+function meteNodos(idDiv, nomIdioma){
+	var div =document.createElement("div");
+	div.id = idDiv;
+	div.className = 'divIdioma';
+	div.innerHTML = "<input type ='button' value='X' onclick ='quitaIdioma(this)'><p>" 
+			  + nomIdioma+ "<br>Elija nivel:</p>\n<select onchange = 'elegirNiv(this)'>"+
+			  "<option></option>"+
+			  " <option value='Principiante'>Principiante</option>"+
+			  " <option value='Intermedio'>Intermedio</option>"+
+			  " <option value='Avanzado'>Avanzado</option></select>";
+   	document.getElementById('d1').appendChild(div);
+
 }
 
 function imprimeIdiomas(){
